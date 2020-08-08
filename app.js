@@ -12,7 +12,7 @@ const peerSerer = ExpressPeerServer(server, {
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-const port = 443
+const port = 3000
 
 
 
