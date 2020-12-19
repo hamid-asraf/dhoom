@@ -10,8 +10,8 @@ body{
 }
 
 video{
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
     object-fit: cover;
 }
 
@@ -106,4 +106,35 @@ video{
 
 .unmute {
     color: #CC3833;
+}
+
+.main__controls__top {
+    display: none;
+    position: absolute;
+    width: 60%;
+    color: #fff;
+    background: #3d7122;
+    top: 0;
+    cursor: pointer;
+    justify-content: center;
+    height: 53px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.main__controls__top__button{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 40px;
+    min-width: 80px;
+    cursor: pointer;
+
+}
+
+.main__controls__top__button:hover {
+    background-color: #b39e9e;
+    border-radius: 5px;
 }

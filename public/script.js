@@ -138,6 +138,21 @@ const setStopVideo = () => {
 `;
 
     document.querySelector('.main__video__button').innerHTML = html;
+}
 
 
+document.addEventListener('mousemove', function (e) {
+
+    mouseY = e.clientY || e.pageY;
+    if (mouseY < 56 && mouseY > 0) {
+        $('.main__controls__top').css({ display: 'flex' });
+    } else {
+        $('.main__controls__top').css({ display: 'none' });
+    }
+}, false);
+
+shareScreen = async() => {
+    const video = document.createElement('video');
+    captureStream = await navigator.mediaDevices.getDisplayMedia();
+    addVideoStream(video, captureStream)
 }
